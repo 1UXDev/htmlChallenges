@@ -21,20 +21,53 @@
           <legend>Enter your information</legend>
 
           <!-- Email: label & input -->
+          <label for="email">Your Email:</label>
+          <input id="email" type="email" name="email" />
 
           <!-- Date: label & input -->
+          <label for="date">Please select your arrival-date:</label>
+          <input id="date" type="date" name="date" />
 
           <fieldset class="radio-options">
             <legend>Which one of these animals would you like to visit?</legend>
 
             <!-- Radio Buttons: labels & inputs -->
+            <input type="radio" id="radio1" name="radios" />
+            <label for="radio1">Relaxed Sloths</label>
+            <input type="radio" id="radio2" name="radios" />
+            <label for="radio2">Jumpy Kangaroos</label>
+            <input type="radio" id="radio3" name="radios" />
+            <label for="radio3">Thieving Racoons</label>
           </fieldset>
 
           <!-- Textarea: label & input -->
-
+          <label for="concerns">Any concerns?</label>
+          <textarea rows="7" placeholder="Leave us a message..."></textarea>
           <!-- Two Checkboxes: labels & inputs -->
+          <label for="consent">
+            <input
+              required
+              aria-required="true"
+              id="consent"
+              type="checkbox"
+              name="consent"
+              value="consent"
+            />
+            Data Processing Consent
+          </label>
+          <label for="newsletter">
+            <input
+              id="newsletter"
+              type="checkbox"
+              name="consent"
+              value="newsletter"
+            />
+            Subscribe to Newsletter
+          </label>
 
           <!-- Two Buttons: reset & submit -->
+          <button type="reset" aria-label="reset form">Reset</button>
+          <button type="submit">Submit Form</button>
         </fieldset>
       </form>
     </section>
